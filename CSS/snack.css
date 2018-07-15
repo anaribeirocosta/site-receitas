@@ -95,10 +95,6 @@ p{
     margin: 1vh 0; 
 }
 
-.menulat a:checked ~ img{
-    
-}
-
 .menulat a{
     text-decoration: none;
     color: #545454;
@@ -133,6 +129,7 @@ p{
     align-items: center;
     align-content: flex-start;
     text-shadow: 2px 2px 8px rgb(31, 31, 31);
+    display: none;
 }
 .lunch {
     background-image: url(../image/lunch.jpg);
@@ -160,7 +157,6 @@ p{
     align-items: center;
     align-content: flex-start;
     text-shadow: 2px 2px 8px rgb(31, 31, 31);
-    display: none;
 }
 .dinner {
     background-image: url(../image/dinner.jpg);
