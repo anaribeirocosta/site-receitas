@@ -81,7 +81,7 @@ p{
     font-size: 15pt;
     color: #fff;
     font-weight: 50;
-    width: 40%;
+    width: 30%;
     text-align: center;
 }
 .menulat{
@@ -93,10 +93,6 @@ p{
     width: 12vh;
     height: 64vh;
     margin: 1vh 0; 
-}
-
-.menulat a:checked ~ img{
-    
 }
 
 .menulat a{
@@ -120,6 +116,19 @@ p{
     transition: 0.5s;
 }
 
+.cafezinho:hover {
+    background-image: url(../image/lunch.jpg);
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    height: 64vh;
+    margin: 1vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    text-shadow: 2px 2px 8px rgb(31, 31, 31);
+}
 
 .breakfast {
     background-image: url(../image/breakfast.jpg);
@@ -237,7 +246,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
     overflow: hidden;
     margin-top: 1vh;
 }
@@ -246,7 +254,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
 }
 .newsletter input{
     margin: 10px;
@@ -388,6 +395,9 @@ footer {
         font-weight: 300;
         margin-top: 10px;
     }
+    footer {
+        flex-direction: column;
+    }
     .newsletter {
         display: flex;
         flex-direction: column;
@@ -406,5 +416,28 @@ footer {
         display: inline;
         margin-right: 5%; 
         text-transform: uppercase;
+    }
+}
+@media (min-width: 600px) and (max-width: 1028px) {
+    .menu{
+        width: 50%;
+    }
+    .rest {
+        width: 20%;
+        align-items: center;
+        padding: 10px;
+    }
+    .rest img {
+        width: 130px;
+        height: 130px;
+    }
+    .restaurantes h4 {
+        font-size: 13pt;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 10px;
+    }
+    p{
+        width: 40%;
     }
 }
